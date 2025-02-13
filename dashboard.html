@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziliel OnlineShop</title>
+   <link rel="stylesheet" href="dashboard.css">
+   <link rel="shortcut icon" href="icon.jpg" type="image/x-icon" />
+<body>
+    <header>
+        <button onclick="location.href='login.html'" class="login-btn">LOGOUT</button>
+
+        <h1><span class="red">Z</span>ILIEL Onlineshop</h1>
+        <input type="text" class="search" placeholder="Cari">
+    </header>
+
+    <main>
+        <div class="banner">
+            <img src="promo.jpg" alt="Online Shopping">
+            <img src="promo2.jpg" alt="Battery">
+            <img src="promo3.jpg" alt="Black Friday">
+            <img src="promo4.jpg" alt="Black Friday">
+            <img src="promo5.jpg" alt="Black Friday">
+        </div>
+
+        <div class="product-grid">
+            <div class="product">
+                <img src="samsung.jpg" alt="Galaxy S25">
+                <p> Samsung Galaxy S25</p>
+            </div>
+            <div class="product">
+                <img src="psvr2.jpg" alt="PS VR 2">
+                <p>PS VR 2</p>
+            </div>
+            <div class="product">
+                <img src="mac.jpg" alt="Macbook M3">
+                <p>Macbook Air M3</p>
+            </div>
+            <div class="product">
+                <img src="ps5.jpg" alt="PS 5">
+                <p>PS 5</p>
+            </div>
+            <div class="product">
+                <img src="redmibuds.jpg" alt="Redmi Buds">
+                <p>Redmi Buds 6 play</p>
+            </div>
+            <div class="product">
+                <img src="rtx.jpg" alt="Lamborghini">
+                <p>RTX 4090</p>
+            </div>
+             <div class="product">
+                <img src="jam.jpg" alt="apple watch">
+                <p>Apple Watch</p>
+            </div>
+              <div class="product">
+                <img src="iphone.jpg" alt="iphone">
+                <p>Iphone 16 Pro Max</p>
+            </div>
+              <div class="product">
+                <img src="tv.jpg" alt="iphone">
+                <p>Tv</p>
+            </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const products = document.querySelectorAll(".product img");
+
+        products.forEach(img => {
+            img.addEventListener("click", function () {
+                
+                products.forEach(p => p.classList.remove("zoom"));
+                
+                this.classList.add("zoom");
+                
+                setTimeout(() => {
+                    this.classList.remove("zoom");
+                }, 1000);
+            });
+        });
+    });
+</script>
+        </div>
+    </main>
+</body>
+</html>

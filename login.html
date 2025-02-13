@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ziliel Onlineshop</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="logo"><span class="red">Z</span>ILIEL OnlineShop</h1>
+        <p class="subtitle">Masuk untuk melanjutkan</p>
+        
+        <form action="https://zilielshop.com" method="GET">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <button onclick="location.href='dashboard.html'" class="login-btn">LOGIN</button>
+
+
+
+            <p class="register-text">Belum punya akun? <a href="dashboard.html">Daftar</a></p>
+        </form>
+    </div>
+</body>
+</html>

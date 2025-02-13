@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0c0c0;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: px;
+}
+
+.z {
+    color: red;
+    font-size: 105px;
+    font-weight: bold;
+}
+
+.brand {
+    font-size: 100px;
+    font-weight: bold;
+    color: black;
+}
+
+.tagline {
+    font-size: 14px;
+    color: black;
+    margin-top: 5px;
+}
+
+.login-btn {
+    
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background-color: darkred;
+}
